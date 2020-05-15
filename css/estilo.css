@@ -1,0 +1,168 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    background-image: url('https://www.dashcontroles.com.br/wp-content/uploads/2018/06/wallpaper-gamer.jpg');
+    background-size: auto 100vh;
+    height:100vh;
+  }
+
+  @media (min-width: 400px) {
+    body {
+      font-size: 18px;
+    }
+  }
+  
+  @media (min-width: 600px) {
+    body {
+      font-size: 22px;
+    }
+  }
+
+  header { 
+     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .menu {
+    background-color: yellow;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 1;
+  }
+  .menu ul {
+    display: flex;
+    justify-content: space-around;
+  }
+  .menu li {
+    list-style: none;
+     
+  }
+  .menu a {
+    display: block;
+    padding: 10px 20px;
+    transition: background-color 1s , color 1s;
+  }
+  .menu a:active,
+  .menu a:hover {
+    background-color:rgb(105,105,105) ;
+    color:yellow;
+  }
+  a {
+    font-family: 'Bungee', cursive;
+    color: rgb(26, 26, 78);
+    text-decoration: none;
+  }
+  
+  .page{
+    transform: scale(0.2) translateY(50vh);
+    opacity:0 ;
+
+    animation: linear 2s animacaoPage forwards;
+  }
+  @keyframes animacaoPage {
+      100%{
+        transform: scale(1) translateY(0);
+        opacity:1 ;
+    
+      }
+  }
+  
+  
+  .site-subtitle,
+  .site-title {
+    color: whitesmoke;
+    text-align: center;
+  }
+  
+  .site-title {
+    font-size: 2em;
+    font-family: 'Press Start 2P', cursive;
+  }
+  .site-subtitle {
+    font-family: 'Indie Flower', cursive;
+  }
+  .contato,
+  .tam {
+    padding: 2em;
+    color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+
+  }
+  .tam .grid .titulo p {
+    padding: 2em;
+    color: whitesmoke;
+    font-family: 'Press Start 2P', cursive;
+  }
+  .img-portfolio {
+    height: 150px;
+    width: 150px;
+    transition: transform 1500ms;
+  }
+  .img-portfolio:hover {
+    transform: scale(1.2) rotate(360deg);
+  }
+  .img-portfolio{
+    float: left;
+    margin: 0px 50px;
+  }
+  .tam .grid .titulo p{
+    clear: left;
+  }
+    .tam .grid h2{
+    margin: 0px 50px;
+    font-size: 1em;
+    margin-bottom: 1em;
+  }
+  .tam  {
+    padding: 30px;
+    margin: 1em;
+
+  }
+  .tam .grid .titulo p {
+    margin : 30px;
+  }
+  
+  /*esse aqui é para fazer colunas,com
+ 
+ 
+    di .tam .grid {splay:grid;
+    gap: 2em;
+    
+  }
+  @media (min-width : 560px) {
+    .tam .grid {
+      grid-template-columns:250px ;
+    }
+  }
+  */
+  .tam .tt p {
+    font-family: 'Indie Flower', cursive;
+    color: whitesmoke;
+    padding: 1em ;
+  }
+  .contato a {
+    transition: text-shadow 1s ;
+    color: whitesmoke;
+    font-size: 2em;
+  }
+  .contato a:active,
+  .contato a:hover {
+    text-decoration: none;
+    text-shadow: 0px 0px 10px yellow;
+  }
+
+  .contato .icons {
+    text-align: center;
+  }
+    .contato{
+      text-align: center;
+    }
+  
+ 
